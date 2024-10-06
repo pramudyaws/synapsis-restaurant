@@ -57,3 +57,6 @@ func (s *FoodCartService) GetCartItemsByUserID(userID uint) ([]models.FoodCart, 
     return foodCarts, nil
 }
 
+func (s *FoodCartService) DeleteFoodCart(userID uint) error {
+	return config.DB.Where("user_id = ?", userID).Delete(&models.FoodCart{}).Error
+}

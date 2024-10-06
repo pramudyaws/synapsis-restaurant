@@ -24,6 +24,7 @@ func setupPrivateRoutes(apiV1 *gin.RouterGroup) {
 		private.POST("/food-carts", controllers.AddToFoodCart)
 		private.DELETE("/food-carts/:id", controllers.DeleteFromFoodCart)
 		private.GET("/food-carts", controllers.GetFoodCartList)
+		private.POST("/food-carts/checkout", controllers.CheckoutFoodCart)
 	}
 }
 
