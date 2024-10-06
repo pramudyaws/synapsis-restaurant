@@ -12,6 +12,7 @@ func setupPublicRoutes(apiV1 *gin.RouterGroup) {
 	{
 		public.POST("/register", controllers.CreateUser)
 		public.POST("/login", controllers.Login)
+		public.GET("/foods", controllers.GetFoodList)
 	}
 }
 
