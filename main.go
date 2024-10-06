@@ -1,15 +1,18 @@
 package main
 
 import (
-    "github.com/gin-gonic/gin"
+	"synapsis-restaurant/config"
+	"synapsis-restaurant/models"
+	"synapsis-restaurant/routes"
 )
 
 func main() {
-    r := gin.Default()
-    r.GET("/", func(c *gin.Context) {
-        c.JSON(200, gin.H{
-            "message": "Welcome to Synapsis Restaurant API!",
-        })
-    })
-    r.Run(":8080")
+    // Connect to DB
+	config.ConnectDatabase()
+    // Auto-migrate all models
+	config.DB.AutoMigrate(&models.User{})
+    // Setup routes
+	r := routes.SetupRouter()
+    // Run server
+	r.Run()
 }
