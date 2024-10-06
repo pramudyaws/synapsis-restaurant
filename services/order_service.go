@@ -1,9 +1,10 @@
 package services
 
 import (
-	"synapsis-restaurant/config"
-	"synapsis-restaurant/models"
 	"errors"
+
+	"github.com/pramudyaws/synapsis-restaurant/config"
+	"github.com/pramudyaws/synapsis-restaurant/models"
 )
 
 type OrderService struct {

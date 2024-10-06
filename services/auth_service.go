@@ -3,9 +3,10 @@ package services
 import (
 	"errors"
 	"os"
-	"synapsis-restaurant/config"
-	"synapsis-restaurant/models"
 	"time"
+
+	"github.com/pramudyaws/synapsis-restaurant/config"
+	"github.com/pramudyaws/synapsis-restaurant/models"
 
 	"github.com/golang-jwt/jwt/v5"
 	"golang.org/x/crypto/bcrypt"

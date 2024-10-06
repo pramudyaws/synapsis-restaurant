@@ -2,8 +2,8 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"synapsis-restaurant/controllers"
-	"synapsis-restaurant/middlewares"
+	"github.com/pramudyaws/synapsis-restaurant/controllers"
+	"github.com/pramudyaws/synapsis-restaurant/middlewares"
 )
 
 // Public routes

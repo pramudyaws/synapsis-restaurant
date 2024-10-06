@@ -2,8 +2,9 @@ package controllers
 
 import (
 	"net/http"
-	"synapsis-restaurant/models"
-	"synapsis-restaurant/services"
+
+	"github.com/pramudyaws/synapsis-restaurant/models"
+	"github.com/pramudyaws/synapsis-restaurant/services"
 
 	"github.com/gin-gonic/gin"
 )

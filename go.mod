@@ -1,4 +1,4 @@
-module synapsis-restaurant
+module github.com/pramudyaws/synapsis-restaurant
 
 go 1.23.2
 

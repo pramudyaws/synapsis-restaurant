@@ -1,8 +1,8 @@
 package services
 
 import (
-	"synapsis-restaurant/config"
-	"synapsis-restaurant/models"
+	"github.com/pramudyaws/synapsis-restaurant/config"
+	"github.com/pramudyaws/synapsis-restaurant/models"
 )
 
 type FoodService struct{}
