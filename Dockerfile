@@ -14,15 +14,5 @@ COPY . .
 # Build the application
 RUN go build -o main .
 
-# Use Alpine Linux for the final runtime image
-FROM alpine:latest
-WORKDIR /root/
-
-# Copy the built binary from the builder stage
-COPY --from=builder /app/main .
-
-# Expose port 8080 to allow external access
-EXPOSE 8080
-
 # Command to run the application
 CMD ["./main"]
