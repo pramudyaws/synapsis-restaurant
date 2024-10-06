@@ -7,12 +7,17 @@ import (
 )
 
 func main() {
-    // Connect to DB
+	// Connect to DB
 	config.ConnectDatabase()
-    // Auto-migrate all models
-	config.DB.AutoMigrate(&models.User{})
-    // Setup routes
+	// Auto-migrate all models
+	config.DB.AutoMigrate(
+		&models.User{}, 
+		&models.FoodCategory{}, &models.Food{}, &models.FoodCart{},
+		&models.Order{}, &models.OrderItem{}, 
+		&models.PaymentTransaction{},
+	)
+	// Setup routes
 	r := routes.SetupRouter()
-    // Run server
+	// Run server
 	r.Run()
 }

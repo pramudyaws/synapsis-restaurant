@@ -1,25 +1,28 @@
 package routes
 
 import (
+	"github.com/gin-gonic/gin"
 	"synapsis-restaurant/controllers"
 	"synapsis-restaurant/middlewares"
-	"github.com/gin-gonic/gin"
 )
 
+// Public routes
 func setupPublicRoutes(apiV1 *gin.RouterGroup) {
 	public := apiV1.Group("/public")
 	{
-		// Public routes
 		public.POST("/register", controllers.CreateUser)
 		public.POST("/login", controllers.Login)
 	}
 }
 
+// Private routes
 func setupPrivateRoutes(apiV1 *gin.RouterGroup) {
 	private := apiV1.Group("/private")
 	private.Use(middlewares.JWTAuthMiddleware())
 	{
-		// Private routes
+		private.POST("/food-carts", controllers.AddToFoodCart)
+		private.DELETE("/food-carts/:id", controllers.DeleteFromFoodCart)
+		private.GET("/food-carts", controllers.GetFoodCartList)
 	}
 }
 
