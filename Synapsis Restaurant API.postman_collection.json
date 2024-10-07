@@ -278,6 +278,29 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Index - Welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://13.213.59.189/api/v1/",
+					"protocol": "http",
+					"host": [
+						"13",
+						"213",
+						"59",
+						"189"
+					],
+					"path": [
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
