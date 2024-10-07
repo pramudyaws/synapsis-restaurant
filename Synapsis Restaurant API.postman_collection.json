@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "7a09c51c-f95d-4d4e-9793-ffc14b377509",
+		"name": "Synapsis Restaurant API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38817777"
+	},
+	"item": [
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user@mail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.213.59.189/api/v1/public/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"213",
+								"59",
+								"189"
+							],
+							"path": [
+								"api",
+								"v1",
+								"public",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user@mail.com\",\r\n    \"password\": \"12345678\",\r\n    \"name\": \"New User\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.213.59.189/api/v1/public/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"213",
+								"59",
+								"189"
+							],
+							"path": [
+								"api",
+								"v1",
+								"public",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food - List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://13.213.59.189/api/v1/public/foods?category=Main Course",
+							"protocol": "http",
+							"host": [
+								"13",
+								"213",
+								"59",
+								"189"
+							],
+							"path": [
+								"api",
+								"v1",
+								"public",
+								"foods"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "Main Course"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Private",
+			"item": [
+				{
+					"name": "Food Carts - List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://13.213.59.189/api/v1/private/food-carts",
+							"protocol": "http",
+							"host": [
+								"13",
+								"213",
+								"59",
+								"189"
+							],
+							"path": [
+								"api",
+								"v1",
+								"private",
+								"food-carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food Carts - Add Food",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"food_id\": 1,\r\n    \"quantity\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.213.59.189/api/v1/private/food-carts",
+							"protocol": "http",
+							"host": [
+								"13",
+								"213",
+								"59",
+								"189"
+							],
+							"path": [
+								"api",
+								"v1",
+								"private",
+								"food-carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food Carts - Remove Food",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://13.213.59.189/api/v1/private/food-carts/1",
+							"protocol": "http",
+							"host": [
+								"13",
+								"213",
+								"59",
+								"189"
+							],
+							"path": [
+								"api",
+								"v1",
+								"private",
+								"food-carts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food Carts - Checkout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://13.213.59.189/api/v1/private/food-carts/checkout",
+							"protocol": "http",
+							"host": [
+								"13",
+								"213",
+								"59",
+								"189"
+							],
+							"path": [
+								"api",
+								"v1",
+								"private",
+								"food-carts",
+								"checkout"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "your_token",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Index - Welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://13.213.59.189/api/v1/",
+					"protocol": "http",
+					"host": [
+						"13",
+						"213",
+						"59",
+						"189"
+					],
+					"path": [
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
