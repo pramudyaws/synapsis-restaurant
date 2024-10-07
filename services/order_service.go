@@ -8,12 +8,14 @@ import (
 )
 
 type OrderService struct {
-	foodCartService *FoodCartService
+	foodCartService 				*FoodCartService
+	paymentTransactionService    	*PaymentTransactionService
 }
 
 func NewOrderService() *OrderService {
 	return &OrderService{
-		foodCartService: NewFoodCartService(),
+		foodCartService: 			NewFoodCartService(),
+		paymentTransactionService: 	NewPaymentTransactionService(),
 	}
 }
 
@@ -63,6 +65,11 @@ func (s *OrderService) CreateOrder(userID uint) error {
 	}
 
 	if err := config.DB.Create(&orderItems).Error; err != nil {
+		return err
+	}
+
+	// Save payment transaction
+	if err := s.paymentTransactionService.SavePaymentTransaction(order.ID, totalAmount); err != nil {
 		return err
 	}
 
