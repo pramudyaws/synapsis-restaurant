@@ -34,6 +34,11 @@ func SetupRouter() *gin.Engine {
 	// API V1
 	apiV1 := r.Group("/api/v1")
 	{
+		apiV1.GET("/", func(c *gin.Context) {
+			c.JSON(200, gin.H{
+				"message": "Welcome to Synapsis Restaurant API",
+			})
+		})
 		setupPublicRoutes(apiV1)
 		setupPrivateRoutes(apiV1)
 	}
