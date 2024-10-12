@@ -43,6 +43,7 @@ These routes require authentication using a Bearer token in the Authorization he
   {
     "message": "Welcome to Synapsis Restaurant API"
   }
+  ```
 
 ## Postman Collection
 
@@ -51,7 +52,7 @@ These routes require authentication using a Bearer token in the Authorization he
 
 - For private routes, ensure that you replace the Authorization header with the correct Bearer token, which is obtained after successful login.
 
-## Technologies Used
+## Technologies
 - **Go (Golang)**: Backend programming language
 - **Gin**: HTTP web framework for building the API
 - **GORM**: Object Relational Mapping (ORM) library for database interactions
