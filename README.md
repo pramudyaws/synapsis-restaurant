@@ -1,6 +1,6 @@
 # Synapsis Restaurant API
 
-Synapsis Restaurant API is developed by **Pramudya Wibisono**. It provides a backend solution for managing restaurant operations such as user registration, login, food listing, and managing food carts.
+**Synapsis Restaurant API** is developed by **Pramudya Wibisono**. It provides a backend solution for managing restaurant operations such as user registration, login, food listing, and managing food carts.
 
 ## API Documentation
 
