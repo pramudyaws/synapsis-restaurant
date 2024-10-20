@@ -59,4 +59,5 @@ These routes require authentication using a Bearer token in the Authorization he
 - **JWT**: JSON Web Tokens for authentication and authorization
 - **Supabase (PostgreSQL)**: Used for database management, powered by PostgreSQL via Supabase
 - **Docker**: For containerization
-- **AWS**: Amazon Web Services used for deployment
+- **AWS**: (previously) Amazon Web Services used for deployment 
+- **GCP**: (currently) Google Cloud Platform used for deployment 

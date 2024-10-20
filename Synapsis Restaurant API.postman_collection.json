@@ -24,7 +24,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://13.213.59.189/api/v1/public/login",
+							"raw": "http://35.197.144.73/api/v1/public/login",
 							"protocol": "http",
 							"host": [
 								"13",
@@ -57,7 +57,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://13.213.59.189/api/v1/public/register",
+							"raw": "http://35.197.144.73/api/v1/public/register",
 							"protocol": "http",
 							"host": [
 								"13",
@@ -81,7 +81,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://13.213.59.189/api/v1/public/foods?category=Main Course",
+							"raw": "http://35.197.144.73/api/v1/public/foods?category=Main Course",
 							"protocol": "http",
 							"host": [
 								"13",
@@ -123,7 +123,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://13.213.59.189/api/v1/private/food-carts",
+							"raw": "http://35.197.144.73/api/v1/private/food-carts",
 							"protocol": "http",
 							"host": [
 								"13",
@@ -163,7 +163,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://13.213.59.189/api/v1/private/food-carts",
+							"raw": "http://35.197.144.73/api/v1/private/food-carts",
 							"protocol": "http",
 							"host": [
 								"13",
@@ -194,7 +194,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://13.213.59.189/api/v1/private/food-carts/1",
+							"raw": "http://35.197.144.73/api/v1/private/food-carts/1",
 							"protocol": "http",
 							"host": [
 								"13",
@@ -226,7 +226,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://13.213.59.189/api/v1/private/food-carts/checkout",
+							"raw": "http://35.197.144.73/api/v1/private/food-carts/checkout",
 							"protocol": "http",
 							"host": [
 								"13",
@@ -285,7 +285,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://13.213.59.189/api/v1/",
+					"raw": "http://35.197.144.73/api/v1/",
 					"protocol": "http",
 					"host": [
 						"13",
