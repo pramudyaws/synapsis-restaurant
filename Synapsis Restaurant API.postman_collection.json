@@ -27,10 +27,10 @@
 							"raw": "http://35.197.144.73/api/v1/public/login",
 							"protocol": "http",
 							"host": [
-								"13",
-								"213",
-								"59",
-								"189"
+								"35",
+								"197",
+								"144",
+								"73"
 							],
 							"path": [
 								"api",
@@ -60,10 +60,10 @@
 							"raw": "http://35.197.144.73/api/v1/public/register",
 							"protocol": "http",
 							"host": [
-								"13",
-								"213",
-								"59",
-								"189"
+								"35",
+								"197",
+								"144",
+								"73"
 							],
 							"path": [
 								"api",
@@ -84,10 +84,10 @@
 							"raw": "http://35.197.144.73/api/v1/public/foods?category=Main Course",
 							"protocol": "http",
 							"host": [
-								"13",
-								"213",
-								"59",
-								"189"
+								"35",
+								"197",
+								"144",
+								"73"
 							],
 							"path": [
 								"api",
@@ -126,10 +126,10 @@
 							"raw": "http://35.197.144.73/api/v1/private/food-carts",
 							"protocol": "http",
 							"host": [
-								"13",
-								"213",
-								"59",
-								"189"
+								"35",
+								"197",
+								"144",
+								"73"
 							],
 							"path": [
 								"api",
@@ -166,10 +166,10 @@
 							"raw": "http://35.197.144.73/api/v1/private/food-carts",
 							"protocol": "http",
 							"host": [
-								"13",
-								"213",
-								"59",
-								"189"
+								"35",
+								"197",
+								"144",
+								"73"
 							],
 							"path": [
 								"api",
@@ -197,10 +197,10 @@
 							"raw": "http://35.197.144.73/api/v1/private/food-carts/1",
 							"protocol": "http",
 							"host": [
-								"13",
-								"213",
-								"59",
-								"189"
+								"35",
+								"197",
+								"144",
+								"73"
 							],
 							"path": [
 								"api",
@@ -229,10 +229,10 @@
 							"raw": "http://35.197.144.73/api/v1/private/food-carts/checkout",
 							"protocol": "http",
 							"host": [
-								"13",
-								"213",
-								"59",
-								"189"
+								"35",
+								"197",
+								"144",
+								"73"
 							],
 							"path": [
 								"api",
@@ -288,10 +288,10 @@
 					"raw": "http://35.197.144.73/api/v1/",
 					"protocol": "http",
 					"host": [
-						"13",
-						"213",
-						"59",
-						"189"
+						"35",
+						"197",
+						"144",
+						"73"
 					],
 					"path": [
 						"api",
